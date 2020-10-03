@@ -22,7 +22,7 @@ async function checkOptions(options) {
 
 	if (input) {
     try {
-      await fs.access(input, fs.constants.R_OK);
+      await fs.promises.access(input, fs.constants.R_OK);
     } catch (error) {
       process.stderr.write('error: input file doesn\'t exist or is not readable');
 			process.exit(1);
@@ -31,7 +31,7 @@ async function checkOptions(options) {
 
 	if (output) {
 		try {
-			await fs.access(output, fs.constants.W_OK);
+			await fs.promises.access(output, fs.constants.W_OK);
 		} catch (error) {
 			process.stderr.write('error: output file doesn\'t exist or is not writable');
 			process.exit(1);
