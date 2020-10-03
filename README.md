@@ -13,6 +13,13 @@ If 2 and 3 options are not provided input and output will be done from the conso
 
 For encoding/decoding use only the English alphabet, all other characters should be kept untouched.
 
+## Preparation before use
+
+- Install [Node.js](https://nodejs.org/en/)
+- Clone this repository: `git clone https://github.com/torchik-slava/cipher-cli`
+- Go to folder `caesar-cipher-cli`
+- Run `npm install` in command line
+
 **IMPORTANT!** To run the program, you must be in the **caesar-cipher-cli** folder!
 
 **Usage example:**
